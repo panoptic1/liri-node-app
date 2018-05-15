@@ -25,7 +25,6 @@ function getTweets(){
     })   
 };
 
-getTweets();
 
 
 var command = process.argv[2];
@@ -33,4 +32,14 @@ var command = process.argv[2];
 if (command === "my-tweets") {
     getTweets();
     //print last twenty tweets
+}
+
+if (command === "spotify-this-song '<song name here>'"){
+    getSong();
+    //get the requested song
+}
+
+if (command === "movie-this '<movie name here>'"){
+    getMovie();
+    //get movie information from OMDB
 }
